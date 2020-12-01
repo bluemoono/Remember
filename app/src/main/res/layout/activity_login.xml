@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grape_compote"
+    tools:context=".UI.LoginActivity">
+
+    <TextView
+        android:id="@+id/bannerLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember"
+        android:textSize="28pt"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="48dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bannerLogin"/>
+
+    <EditText
+        android:id="@+id/senhaLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailLogin"/>
+
+    <TextView
+        android:id="@+id/cadastroLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastre-se"
+        android:onClick="cadastro"
+        android:textSize="15pt"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="48dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/senhaLogin"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Login"
+        android:onClick="login"
+        android:backgroundTint="@color/purple_200"
+        app:layout_constraintCircleRadius="10pt"
+        android:textSize="10pt"
+        android:textColorHint="@color/white"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

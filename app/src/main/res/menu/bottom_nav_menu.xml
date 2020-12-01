@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        />
+
+    <item android:id="@+id/locais"
+        android:icon="@drawable/ic_locais"
+        android:title="Trend"
+        />
+
+    <item android:id="@+id/perfil"
+        android:icon="@drawable/ic_perfil"
+        android:title="Account"
+        />
+
+
+</menu>
